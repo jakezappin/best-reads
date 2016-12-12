@@ -14,10 +14,10 @@ const Author = (function(){
         {authors: [...store().authors, this], books: store().books, reviews: store().reviews}))
     }
 
-    lowestBooks(){
+    highestBooks(){
       return this.ratedBooks().sort(function (a, b) {
-        if (a.averageRating > b.averageRating) { return 1 }
-        if (a.averageRating < b.averageRating) { return -1 }
+        if (a.averageRating < b.averageRating) { return 1 }
+        if (a.averageRating > b.averageRating) { return -1 }
         return 0;
       }).slice(0,3)
     }

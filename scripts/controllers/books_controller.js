@@ -1,6 +1,6 @@
 function populateBooks() {
   $('#book_row').empty();
-  store().authors[store().authors.length-1].lowestBooks().forEach((book)=>{
+  store().authors[store().authors.length-1].highestBooks().forEach((book)=>{
     $('#book_row').append(`
       <div class="col-sm-4">
         <div class="w3-card-8">

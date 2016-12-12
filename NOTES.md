@@ -8,8 +8,6 @@ Badreads/
 			review.js
 		controllers/
 			books_controller.js
-			authors_controller.js
-			reviews_controller.js
 		services/
 		store.
 		jsapp.js
