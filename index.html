@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Badreads</title>
+ <script src="vendor/jquery-1.11.3.js"></script>
+    <!-- This is a tragic waste of space -->
+    <script src="scripts/adapters/goodreads_adapter.js"></script>
+    <script src="scripts/store.js"></script>
+    <script src="scripts/models/author.js"></script>
+    <script src="scripts/models/book.js"></script>
+    <script src="scripts/models/review.js"></script>
+    <script src="scripts/controllers/authors_controller.js"></script>
+    <script src="scripts/controllers/books_controller.js"></script>
+    <script src="scripts/controllers/reviews_controller.js"></script>
+    <script src="scripts/app.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+ <link href="https://fonts.googleapis.com/css?family=Ranga:700" rel="stylesheet">
+ <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+<body>
+
+ <div class="jumbotron text-center">
+   <h1 id="title" style="font-family: 'Ranga', cursive;">B A D&nbsp;&nbsp;&nbsp;R E A D S</h1>
+   <div class="inputbox">Enter an Author</div>
+
+    <form id = "author_form" action="">
+      <div class='name '>
+        <input id='author_name' class='input input_name' type="text" >
+      </div>
+
+      <input type="submit">
+    </form>
+
+ </div>
+
+  <div class="books">
+
+    <div class="container">
+      <div class="row" id="book_row">
+        <div class="col-sm-4">
+          <h3>Worst Book</h3>
+          <p>Cover Image</p>
+          <p>Book name</p>
+          <p>Reviews button</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Almost the Worst Book</h3>
+          <p>Cover Image</p>
+          <p>Book name</p>
+          <p>Reviews button</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Nearly the Worst Book</h3>
+          <p>Cover Image</p>
+          <p>Book name</p>
+          <p>Reviews button</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" id="review_row">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
