@@ -3,6 +3,7 @@ function goodreadsAdapter(query){
 }
 
 function getAuthor(name){
+	//var goodReadsURL = "https://www.goodreads.com/api/author_url/" + name + "?key=CRW3QW5h0xq6eR0juk2g"
 	return $.ajax({
 		method: "GET",
 		url: `https://www.goodreads.com/api/author_url/${name}`,
