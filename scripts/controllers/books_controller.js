@@ -14,7 +14,4 @@ function populateBooks() {
     `);
   })
 
-  // Get worst books
-  // Iterate to make columns
-  // Add to each column
 }
